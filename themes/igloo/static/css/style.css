@@ -40,7 +40,7 @@ body {
 }
 
 .header .logo {
-    max-width: 80px;
+    max-width: 200px;
     height: auto;
     flex-shrink: 0;
 }
@@ -200,7 +200,7 @@ footer p {
     }
 
     .header .logo {
-        max-width: 60px;
+        max-width: 100px;
     }
 
     .header h1 {
@@ -241,7 +241,7 @@ footer p {
     }
 
     .header .logo {
-        max-width: 50px;
+        max-width: 80px;
     }
 
     .header h1 {
