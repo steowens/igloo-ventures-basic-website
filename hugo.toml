@@ -1,0 +1,33 @@
+baseURL = 'https://igloo-ventures.com/'
+languageCode = 'en-us'
+title = 'Igloo Ventures Corporation'
+theme = 'igloo'
+
+[params]
+  description = 'AI automation and custom software development for Alaska businesses'
+  tagline = 'Enterprise-Grade Software Solutions for Alaska Businesses'
+  email = 'steveo98501@gmail.com'
+
+  [[params.services]]
+    title = 'AI Automation'
+    description = 'Streamline your operations with intelligent automation. From document processing to customer service, leverage AI to reduce costs and improve efficiency.'
+
+  [[params.services]]
+    title = 'Custom Software Development'
+    description = 'Tailored software solutions built for your specific business needs. Modern, scalable applications that grow with your company.'
+
+  [[params.services]]
+    title = 'Cloud Architecture'
+    description = 'Migrate to the cloud or optimize your existing infrastructure. Secure, reliable, and cost-effective cloud solutions designed for Alaska businesses.'
+
+  [[params.benefits]]
+    title = 'Enterprise Experience'
+    description = '25+ years building mission-critical systems at Amazon, Disney, and Samsung. Bringing Fortune 500 expertise to Alaska SMBs.'
+
+  [[params.benefits]]
+    title = 'Local Alaska Presence'
+    description = 'Based in Anchorage, I understand the unique challenges and opportunities facing Alaska businesses. Available for in-person meetings and support.'
+
+  [[params.benefits]]
+    title = 'Rapid Development'
+    description = 'Proven track record of delivering high-quality software quickly. Modern development practices ensure fast time-to-market without sacrificing quality.'

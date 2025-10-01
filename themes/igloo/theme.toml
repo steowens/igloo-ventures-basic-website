@@ -1,0 +1,3 @@
+name = "Igloo"
+description = "Minimal single-page theme for Igloo Ventures"
+min_version = "0.100.0"

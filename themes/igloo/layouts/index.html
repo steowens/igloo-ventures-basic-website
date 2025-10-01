@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Site.Title }}</title>
+    <meta name="description" content="{{ .Site.Params.description }}">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>{{ .Site.Title }}</h1>
+            <p class="tagline">{{ .Site.Params.tagline }}</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About</h2>
+                {{ .Content }}
+            </div>
+        </section>
+
+        <section id="services" class="section section-alt">
+            <div class="container">
+                <h2>Services</h2>
+                <div class="services-grid">
+                    {{ range .Site.Params.services }}
+                    <div class="service-card">
+                        <h3>{{ .title }}</h3>
+                        <p>{{ .description }}</p>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </section>
+
+        <section id="why" class="section">
+            <div class="container">
+                <h2>Why Work With Me</h2>
+                <ul class="benefits-list">
+                    {{ range .Site.Params.benefits }}
+                    <li>
+                        <strong>{{ .title }}:</strong> {{ .description }}
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-alt">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Ready to modernize your business with AI and custom software? Let's talk.</p>
+                <div class="contact-info">
+                    <p><strong>Email:</strong> <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 {{ .Site.Title }}. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
