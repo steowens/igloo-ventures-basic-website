@@ -11,6 +11,7 @@ theme = 'igloo'
   [[params.services]]
     title = 'AI Automation'
     description = 'Streamline your operations with intelligent automation. From document processing to customer service, leverage AI to reduce costs and improve efficiency.'
+    link = '/never-miss-a-customer/'
 
   [[params.services]]
     title = 'Custom Software Development'

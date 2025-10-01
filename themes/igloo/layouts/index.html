@@ -39,9 +39,12 @@
                 <h2>Services</h2>
                 <div class="services-grid">
                     {{ range .Site.Params.services }}
-                    <div class="service-card">
+                    <div class="service-card {{ if .link }}has-link{{ end }}">
                         <h3>{{ .title }}</h3>
                         <p>{{ .description }}</p>
+                        {{ if .link }}
+                        <a href="{{ .link }}" class="learn-more">Learn More →</a>
+                        {{ end }}
                     </div>
                     {{ end }}
                 </div>

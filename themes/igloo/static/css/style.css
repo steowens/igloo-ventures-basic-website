@@ -118,15 +118,18 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
 }
 
 .section-alt .service-card {
     background: white;
 }
 
-.service-card:hover {
+.service-card.has-link:hover {
     transform: translateY(-4px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
 }
 
 .service-card h3 {
@@ -138,6 +141,98 @@ body {
 .service-card p {
     color: #6b7280;
     font-size: 1rem;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.learn-more {
+    display: inline-block;
+    color: #3b82f6;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: auto;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.learn-more:hover {
+    color: #1e3a8a;
+    transform: translateX(4px);
+}
+
+/* Service Page Styles */
+.service-page {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.service-page h1 {
+    font-size: 2.5rem;
+    color: #1e3a8a;
+    margin-bottom: 30px;
+}
+
+.service-page h2 {
+    font-size: 2rem;
+    color: #1e3a8a;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.service-page h3 {
+    font-size: 1.5rem;
+    color: #1e3a8a;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.service-page p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4b5563;
+    margin-bottom: 20px;
+}
+
+.service-page strong {
+    color: #1e3a8a;
+}
+
+.cta-box {
+    margin-top: 50px;
+    padding: 40px;
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.cta-box h3 {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.cta-box p {
+    color: white;
+    opacity: 0.95;
+    margin-bottom: 25px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 14px 32px;
+    background: white;
+    color: #1e3a8a;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Benefits List */
@@ -233,6 +328,22 @@ footer p {
         grid-template-columns: 1fr;
         gap: 20px;
     }
+
+    .service-page h1 {
+        font-size: 2rem;
+    }
+
+    .service-page h2 {
+        font-size: 1.6rem;
+    }
+
+    .service-page h3 {
+        font-size: 1.3rem;
+    }
+
+    .cta-box {
+        padding: 30px 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -259,5 +370,9 @@ footer p {
 
     .header-nav a {
         font-size: 0.85rem;
+    }
+
+    .service-page h1 {
+        font-size: 1.75rem;
     }
 }
