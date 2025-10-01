@@ -26,6 +26,12 @@ body {
     text-align: center;
 }
 
+.hero .logo {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
 .hero h1 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -144,6 +150,10 @@ footer p {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
+    .hero .logo {
+        max-width: 150px;
+    }
+
     .hero h1 {
         font-size: 2rem;
     }
@@ -169,6 +179,10 @@ footer p {
 @media (max-width: 480px) {
     .hero {
         padding: 60px 20px;
+    }
+
+    .hero .logo {
+        max-width: 120px;
     }
 
     .hero h1 {
