@@ -18,30 +18,69 @@ body {
     padding: 0 20px;
 }
 
-/* Hero Section */
-.hero {
+/* Header Section */
+.header {
     background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
     color: white;
-    padding: 80px 20px;
-    text-align: center;
+    padding: 20px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.hero .logo {
-    max-width: 200px;
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header .logo {
+    max-width: 80px;
     height: auto;
-    margin-bottom: 20px;
+    flex-shrink: 0;
 }
 
-.hero h1 {
-    font-size: 2.5rem;
+.header-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.header h1 {
+    font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin: 0;
+    line-height: 1.2;
 }
 
 .tagline {
-    font-size: 1.25rem;
+    font-size: 0.95rem;
     font-weight: 300;
     opacity: 0.95;
+    margin: 0;
+}
+
+.header-nav {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.header-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: opacity 0.2s;
+}
+
+.header-nav a:hover {
+    opacity: 0.8;
 }
 
 /* Sections */
@@ -150,16 +189,36 @@ footer p {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-    .hero .logo {
-        max-width: 150px;
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
     }
 
-    .hero h1 {
-        font-size: 2rem;
+    .header-left {
+        gap: 15px;
+    }
+
+    .header .logo {
+        max-width: 60px;
+    }
+
+    .header h1 {
+        font-size: 1.25rem;
     }
 
     .tagline {
-        font-size: 1.1rem;
+        font-size: 0.85rem;
+    }
+
+    .header-nav {
+        width: 100%;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .header-nav a {
+        font-size: 0.9rem;
     }
 
     .section {
@@ -177,19 +236,28 @@ footer p {
 }
 
 @media (max-width: 480px) {
-    .hero {
-        padding: 60px 20px;
+    .header {
+        padding: 15px 20px;
     }
 
-    .hero .logo {
-        max-width: 120px;
+    .header .logo {
+        max-width: 50px;
     }
 
-    .hero h1 {
-        font-size: 1.75rem;
+    .header h1 {
+        font-size: 1.1rem;
     }
 
     .tagline {
-        font-size: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .header-nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .header-nav a {
+        font-size: 0.85rem;
     }
 }
